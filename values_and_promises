@@ -1,0 +1,9 @@
+var q = require('q');                                                            
+var defer = q.defer();                                                           
+                                                                                 
+function attachTitle(title) {                                                    
+  var newtitle = "DR. " + title;                                                 
+  return newtitle;                                                               
+}                                                                                
+defer.promise.then(console.log);                                                 
+defer.resolve(attachTitle("MANHATTAN"));
